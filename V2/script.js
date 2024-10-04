@@ -8,13 +8,13 @@ let inactivityTime = function () {
     window.onkeydown = resetTimer;
 
     function showFullscreenImage() {
-        fullscreenImage.style.display = 'flex';  // Bild im Vollbildmodus anzeigen
+        fullscreenImage.style.display = 'flex';
     }
 
     function resetTimer() {
         clearTimeout(time);
-        fullscreenImage.style.display = 'none';  // Vollbildbild ausblenden, wenn Benutzer aktiv ist
-        time = setTimeout(showFullscreenImage, 5000);  // Nach 30 Sekunden Inaktivität das Bild anzeigen
+        fullscreenImage.style.display = 'none';
+        time = setTimeout(showFullscreenImage, 5000);
     }
 };
 
