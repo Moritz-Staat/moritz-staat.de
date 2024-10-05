@@ -7,7 +7,7 @@ button.addEventListener('click', () => {
 
 
 
-const text = "Moritz Staat, Web Developer, Gründer, Innovator";
+const text = "Web Developer, Entrepreneur, Digitaler Pionier";
 let index = 0;
 
 function typeWriter() {

@@ -86,16 +86,17 @@ h2 {
 
 .project-item, .project-item2 {
     background-color: #222;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     text-align: center;
+    align-items: center;
 }
 
 .project-item img, .project-item2 img {
-    width: 100%;
-    border-radius: 10px;
+    height: 250px;
+    width: auto;
+    border-radius: 20px;
 }
-
 /* Social Media */
 #social-media {
     text-align: center;

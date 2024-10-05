@@ -14,9 +14,23 @@ let inactivityTime = function () {
     function resetTimer() {
         clearTimeout(time);
         fullscreenImage.style.display = 'none';
-        time = setTimeout(showFullscreenImage, 5000);
+        time = setTimeout(showFullscreenImage, 50000);
     }
 };
 
 // Starte die Überwachung der Inaktivität
 inactivityTime();
+
+
+const text = "Web Developer, Entrepreneur, Digitaler Pionier";
+let index = 0;
+
+function typeWriter() {
+    if (index < text.length) {
+        document.getElementById("typed-text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 100);
+    }
+}
+
+window.onload = typeWriter;
