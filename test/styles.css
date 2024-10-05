@@ -1,0 +1,19 @@
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+
+.testimonial {
+    display: none;
+    font-size: 18px;
+    color: #333;
+}
+.testimonial:first-child {
+    display: block;
+}

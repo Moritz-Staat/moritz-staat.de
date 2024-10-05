@@ -20,7 +20,7 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px;
 }
 
 /* Startseite */
@@ -31,7 +31,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden; /* Verhindert, dass der Pseudo-Inhalt über den Container hinausgeht */
+    overflow: hidden;
 }
 
 #hero::before {
@@ -45,17 +45,15 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(0.5); /* Hintergrundbild abdunkeln */
-    z-index: 1; /* Hinter dem Text */
+    filter: brightness(0.5);
+    z-index: 1;
 }
 
 .overlay {
     position: relative;
-    z-index: 2; /* Text liegt über dem Pseudo-Element */
+    z-index: 2;
     color: white;
 }
-
-
 
 #hero h1 {
     font-size: 4rem;
@@ -68,23 +66,8 @@ a {
     margin-top: 20px;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 10px 30px;
-    background-color: #ff6600;
-    color: #fff;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #e65c00;
-}
-
 /* Über mich */
-#about, #projects, #contact {
+#about, #career, #sparmahl, #projects, #social-media {
     padding: 100px 0;
 }
 
@@ -101,51 +84,35 @@ h2 {
     gap: 20px;
 }
 
-.project-item,.project-item2 {
+.project-item, .project-item2 {
     background-color: #222;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
 }
 
-.project-item img,.project-item2 img {
+.project-item img, .project-item2 img {
     width: 100%;
     border-radius: 10px;
 }
 
-/* Kontaktformular */
-form {
-    display: flex;
-    flex-direction: column;
+/* Social Media */
+#social-media {
+    text-align: center;
+    padding: 50px 0;
 }
 
-label {
-    margin-top: 15px;
-    font-size: 1.2rem;
+#social-media .social-links a {
+    margin: 0 15px;
+    display: inline-block;
 }
 
-input, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+#social-media img {
+    transition: transform 0.3s ease;
 }
 
-button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #e65c00;
+#social-media img:hover {
+    transform: scale(1.2);
 }
 
 /* Vollbild bei Inaktivität */
@@ -160,7 +127,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index:3;
+    z-index: 3;
 }
 
 #fullscreenImage img {
@@ -182,20 +149,18 @@ button:hover {
     font-size: 1.5rem;
     margin-top: 10px;
 }
-#social-media {
-    text-align: center;
-    padding: 50px 0;
+
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-#social-media .social-links a {
-    margin: 0 15px;
-    display: inline-block;
+a:hover {
+    color: #ff6600;
 }
 
-#social-media img {
-    transition: transform 0.3s ease;
-}
-
-#social-media img:hover {
-    transform: scale(1.2);
+p {
+    text-align: justify;
+    line-height: 1.9;
 }
