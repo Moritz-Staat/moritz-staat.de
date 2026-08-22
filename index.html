@@ -3,8 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moritz Staat – Wirtschaftswissenschaftler, Webentwickler & Co-Founder</title>
-  <meta name="description" content="Moritz Staat – Wirtschaftswissenschaftler, Webentwickler und Co-Founder aus Dortmund. Datengetrieben. Effizient. Innovativ.">
+  <title>Moritz Staat – Wirtschaft, KI-Automatisierung & lokale Sprachmodelle</title>
+  <meta name="description" content="Wirtschaftswissenschaftler und KI-Automatisierer aus Dortmund. Lokale Sprachmodelle, Prozessautomatisierung, Business Intelligence. Datengetrieben. Automatisiert.">
+  <link rel="canonical" href="https://www.moritz-staat.de/">
+  <meta name="author" content="Moritz Staat">
+  <meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Moritz Staat">
+  <meta property="og:url" content="https://www.moritz-staat.de/">
+  <meta property="og:title" content="Moritz Staat – Wirtschaft, KI-Automatisierung & lokale Sprachmodelle">
+  <meta property="og:description" content="Wirtschaftswissenschaftler und KI-Automatisierer aus Dortmund. Lokale Sprachmodelle, Prozessautomatisierung, Business Intelligence. Datengetrieben. Automatisiert.">
+  <meta property="og:image" content="https://www.moritz-staat.de/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Portr&auml;t von Moritz Staat">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Moritz Staat – Wirtschaft, KI-Automatisierung & lokale Sprachmodelle">
+  <meta name="twitter:description" content="Wirtschaftswissenschaftler und KI-Automatisierer aus Dortmund. Lokale Sprachmodelle, Prozessautomatisierung, Business Intelligence. Datengetrieben. Automatisiert.">
+  <meta name="twitter:image" content="https://www.moritz-staat.de/images/og-image.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -714,6 +735,21 @@
       letter-spacing: -0.01em;
     }
     .tl-content p { font-size: 0.83rem; color: var(--text-3); margin: 0; }
+    .tl-detail {
+      font-size: 0.82rem;
+      line-height: 1.7;
+      color: var(--text-2);
+      margin-top: 0.6rem !important;
+    }
+    .tl-detail strong { font-weight: 700; color: var(--text); }
+    .tl-modules {
+      margin-top: 0.55rem;
+      font-size: 0.78rem;
+      line-height: 1.75;
+      color: var(--text-3);
+    }
+    .tl-modules b { font-weight: 700; color: var(--text-2); }
+
     .tl-content .badge-active {
       display: inline-block;
       font-size: 0.62rem;
@@ -730,30 +766,7 @@
     }
 
     /* Skill tags */
-    .skill-group { margin-bottom: 1.75rem; }
-    .skill-group:last-child { margin-bottom: 0; }
-    .skill-group-label {
-      font-size: 0.65rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text-3);
-      margin-bottom: 0.65rem;
-    }
-    .tag-row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
-    .tag {
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--text-2);
-      background: var(--bg-2);
-      border: 1px solid var(--border);
-      padding: 0.35rem 0.85rem;
-      border-radius: 8px;
-      transition: background 0.2s, border-color 0.2s, color 0.2s;
-      cursor: default;
-    }
     .tag:hover { background: var(--blue-soft); border-color: var(--blue); color: var(--blue); }
-    .tag.accent { background: var(--blue-soft); border-color: rgba(79,142,247,0.25); color: var(--blue); }
 
     /* ════════════════════════════════════════
        KARRIERE
@@ -913,17 +926,31 @@
 
     .project-card-body { padding: 1.75rem 2rem 2rem; flex: 1; display: flex; flex-direction: column; gap: 1.25rem; }
     .project-desc { font-size: 0.92rem; color: var(--text-2); line-height: 1.75; }
-
-    .stack-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-    .stack-pill {
-      font-size: 0.73rem;
-      font-weight: 700;
-      color: var(--text-3);
+    .project-desc strong { font-weight: 700; color: var(--text); }
+    .project-desc em { font-style: italic; color: var(--text); }
+    .project-desc code {
+      font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+      font-size: 0.85em;
+      padding: 0.1em 0.4em;
+      border-radius: 5px;
       background: var(--bg-2);
       border: 1px solid var(--border);
-      padding: 0.25rem 0.7rem;
-      border-radius: 6px;
+      white-space: nowrap;
     }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--blue);
+      text-decoration: none;
+      transition: gap 0.2s var(--ease), opacity 0.2s;
+      align-self: flex-start;
+    }
+    .project-link:hover { gap: 0.7rem; opacity: 0.8; }
 
     /* ════════════════════════════════════════
        KONTAKT
@@ -1392,7 +1419,7 @@
         <h2 class="headline reveal d1" id="about-title">Wirtschaft trifft KI-Automatisierung.</h2>
         <div class="about-text">
           <p class="reveal d1">Ich bin Moritz Staat – Wirtschaftswissenschaftler, Co-Founder und KI-Automatisierer aus Dortmund. Meinen Bachelor in Wirtschaftswissenschaften schloss ich 2024 an der TU Dortmund ab, aktuell studiere ich im Master Digitalisierungsmanagement an der FernUniversität Hagen.</p>
-          <p class="reveal d2">Als Co-Founder von SparMahl habe ich von Grund auf eine KI-App entwickelt und auf den Markt gebracht – von der Idee über EXIST-Förderantrag und App-Launch bis zu Pitch Events und ersten Nutzern. Als Werkstudent bei W&amp;S Technik treibe ich Digitalisierungsthemen voran: vom BI/KPI-Framework über SAP ARIBA bis zur internen KI-Plattform.</p>
+          <p class="reveal d2">Als Co-Founder von SparMahl habe ich eine KI-App bis in den App Store begleitet – von der Idee über Nutzerforschung, EXIST-Förderantrag und Launch bis zu Pitch Events und ersten Nutzern. Als Werkstudent bei W&amp;S Technik treibe ich Digitalisierungsthemen voran: vom BI/KPI-Framework über SAP ARIBA bis zur internen KI-Plattform.</p>
           <p class="reveal d3">Daneben automatisiere ich die Prozesse einer Immobilienverwaltung mit modernstem KI-Stack: n8n-Workflows, lokale Sprachmodelle (Ollama/qwen2.5), Paperless-ng und vollständig selbst gehosteter Infrastruktur – cloudunabhängig, datenschutzkonform, vollautomatisiert.</p>
         </div>
       </div>
@@ -1405,8 +1432,10 @@
             <div class="tl-year">Aktuell</div>
             <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
             <div class="tl-content">
-              <h4>M.Sc. Digitalisierungsmanagement <span class="badge-active">laufend</span></h4>
-              <p>FernUniversität Hagen · Wirtschaftswissenschaften</p>
+              <h4>M.Sc. Wirtschaftswissenschaft <span class="badge-active">laufend</span></h4>
+              <p>FernUniversität in Hagen · Studienrichtung Digitalisierungsmanagement</p>
+              <p class="tl-detail">Der Studiengang verbindet die &ouml;konomische Perspektive mit der technischen: neben Informationsmanagement und digitaler Transformation stehen <strong>C-Programmierung, Algorithmen und Datenstrukturen</strong> sowie <strong>objektorientierter Systementwurf</strong> auf dem Pflichtplan, dazu Business Intelligence samt Auswertung in R und die Vertiefung von Wirtschaftsmathematik und Statistik. Das Pflichtseminar <strong>&bdquo;Angewandtes digitales Entrepreneurship in der Gesundheitswirtschaft&ldquo;</strong> habe ich im Sommersemester 2026 bei Prof. Dr. Till Winkler abgeschlossen &ndash; mit mycycle als prototypisch umgesetzter Gesch&auml;ftsidee, vorgestellt beim Digital Health on Campus in Hamburg und im Juli 2026 m&uuml;ndlich verteidigt. Die dabei erworbene <strong>Mendix Rapid Developer Certification</strong> deckt die Low-Code-Seite ab. Die Masterarbeit folgt im Wintersemester 2026/27.</p>
+              <p class="tl-modules"><b>Module:</b> Informationsmanagement &middot; Entwurf und Implementierung von Informationssystemen &middot; Business Intelligence &middot; Socio-Technical Information Systems Design &middot; Digital Entrepreneurship &middot; Digitale Transformation &middot; K&auml;uferverhalten &middot; Vertiefung der Wirtschaftsmathematik und Statistik</p>
             </div>
           </div>
           <div class="tl-item">
@@ -1414,7 +1443,8 @@
             <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
             <div class="tl-content">
               <h4>B.Sc. Wirtschaftswissenschaften</h4>
-              <p>TU Dortmund</p>
+              <p>TU Dortmund · Schwerpunkt Technologiemanagement &amp; Marketing</p>
+              <p class="tl-detail">Die Bachelorarbeit am <strong>Lehrstuhl f&uuml;r Wirtschaftsinformatik</strong> untersuchte die Nutzungsabsicht von Self-Service-Technologie im Einzelhandel am Beispiel von REWE Scan&amp;Go. Dazu habe ich das <strong>Technology Acceptance Model</strong> um Konstrukte wie wahrgenommene Kontrolle, Performance- und Datenrisiko sowie Trusting Beliefs erweitert, die Daten &uuml;ber eine Feldbefragung direkt am Point of Sale erhoben und das Modell mit <strong>PLS-SEM</strong> gesch&auml;tzt &ndash; einschlie&szlig;lich Evaluation von Mess- und Strukturmodell, Diskriminanzvalidit&auml;t, Bootstrapping und Effektst&auml;rken. PLS-SEM fiel dabei bewusst gegen den kovarianzbasierten Ansatz aus, weil es bei kleinen Stichproben robuster sch&auml;tzt.</p>
             </div>
           </div>
           <div class="tl-item">
@@ -1423,40 +1453,6 @@
             <div class="tl-content">
               <h4>Abitur</h4>
               <p>Frankfurt am Main</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Skills -->
-        <div class="reveal d2">
-          <div class="skill-group">
-            <div class="skill-group-label">Fachbereiche</div>
-            <div class="tag-row">
-              <span class="tag accent">KI-Automatisierung</span>
-              <span class="tag accent">Prozessautomatisierung</span>
-              <span class="tag accent">PropTech</span>
-              <span class="tag">Datenanalyse</span>
-              <span class="tag">Digitalisierung</span>
-              <span class="tag">UX & Product</span>
-              <span class="tag">Analytics</span>
-              <span class="tag">Startup-Entwicklung</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <div class="skill-group-label">Technologien & Tools</div>
-            <div class="tag-row">
-              <span class="tag accent">n8n</span>
-              <span class="tag accent">Ollama</span>
-              <span class="tag accent">Docker</span>
-              <span class="tag">Claude AI</span>
-              <span class="tag">Paperclip</span>
-              <span class="tag">Paperless-ng</span>
-              <span class="tag">FreeScout</span>
-              <span class="tag">Obsidian</span>
-              <span class="tag">Open WebUI</span>
-              <span class="tag">React Native</span>
-              <span class="tag">Next.js</span>
-              <span class="tag">SAP ARIBA</span>
             </div>
           </div>
         </div>
@@ -1479,7 +1475,7 @@
       <div class="career-card reveal">
         <div class="career-header">
           <div class="career-role">Co-Founder</div>
-          <span class="status-tag status-paused">Pausiert</span>
+          <span class="status-tag status-paused">Abgeschlossen</span>
         </div>
         <div class="career-company">SparMahl</div>
         <div class="career-period">
@@ -1488,12 +1484,13 @@
         </div>
         <div class="career-divider" aria-hidden="true"></div>
         <ul class="career-list">
-          <li>KI-Produktentwicklung (Mobile App)</li>
-          <li>EXIST-Förderantrag ausgearbeitet</li>
-          <li>UX-Testing & Nutzerforschung</li>
-          <li>Full-Stack Entwicklung (React Native, Next.js)</li>
-          <li>Analytics-Implementierung & Tracking</li>
-          <li>Business Development & Operations</li>
+          <li>Positionierung &amp; Go-to-Market</li>
+          <li>Mitarbeit an der LLM-gest&uuml;tzten Produktklassifikation</li>
+          <li>EXIST-F&ouml;rderantrag mit ausgearbeitet</li>
+          <li>UX-Testing &amp; Nutzerforschung</li>
+          <li>Analytics-Implementierung &amp; Tracking</li>
+          <li>Business Development &amp; Operations</li>
+          <li>Recruiting: Einstellung von Praktikant:innen (UI/UX)</li>
         </ul>
       </div>
 
@@ -1556,20 +1553,14 @@
         <div class="project-card-top">
           <div>
             <div class="project-title">SparMahl</div>
-            <div class="project-subtitle">KI-App · Co-Founder · App Store Release</div>
+            <div class="project-subtitle">KI-App &middot; Co-Founder &middot; Gr&uuml;ndungsstipendium.NRW</div>
           </div>
           <div class="project-icon-wrap" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M21.17 8H12V2.83"/><circle cx="12" cy="12" r="3"/></svg>
           </div>
         </div>
         <div class="project-card-body">
-          <p class="project-desc">KI-gestützte Mobile App, die Supermarktangebote analysiert und personalisierte Rezeptvorschläge generiert. Als EXIST-Antragsteller entwickeln wir eine Lösung, die Preistransparenz mit smarter Essensplanung verbindet – von der Idee bis zur fertigen App.</p>
-          <div class="stack-row">
-            <span class="stack-pill">React Native</span>
-            <span class="stack-pill">Next.js</span>
-            <span class="stack-pill">KI-Integration</span>
-            <span class="stack-pill">EXIST</span>
-          </div>
+          <p class="project-desc">KI-gest&uuml;tzte Mobile App, die Supermarktangebote und Rezepte in einem Flow zusammenf&uuml;hrte: statt bloßem Textabgleich klassifizierte ein hybrides Modell aus eigenem dom&auml;nenspezifischem Knowledge Model und LLM-Aufruf Produkte wie Rezeptzutaten in &uuml;ber 1.000 Kategorien &ndash; &uuml;ber einen Vektorraum von rund 25.000 Produkten mit 3.072 Dimensionen, k-Nearest-Neighbor-Retrieval der n&auml;chstliegenden Treffer und anschlie&szlig;ender Kategorieentscheidung durch das Sprachmodell. Dadurch lie&szlig;en sich <em>gehackte</em> und <em>frische Tomaten</em> sauber trennen und Einkaufslisten marken- und bezeichnungsunabh&auml;ngig gegen die G&uuml;nstigstpreise aller M&auml;rkte aufl&ouml;sen. Als Co-Founder verantwortete ich die wirtschaftliche Seite &ndash; Positionierung, Go-to-Market und Nutzerforschung, aus der die MVP-Iterationen hervorgingen &ndash; wirkte an der Entwicklung der LLM-gest&uuml;tzten Klassifikation mit und trug den EXIST-F&ouml;rderantrag mit aus. Gef&ouml;rdert durch das <strong>Gr&uuml;ndungsstipendium.NRW</strong> seit Dezember 2023, begleitet vom Centrum f&uuml;r Entrepreneurship &amp; Transfer der TU Dortmund, mit Release im App Store. Weitergef&uuml;hrt wird das Vorhaben nicht mehr: Die Mitgr&uuml;nder haben sich anderen Projekten zugewandt, und ein Produkt dieser Art tr&auml;gt sich nicht mit halber Mannschaft.</p>
         </div>
       </div>
 
@@ -1585,33 +1576,59 @@
         </div>
         <div class="project-card-body">
           <p class="project-desc">Vollautomatisches KI-System für eine Immobilienverwaltung: Mieterkommunikation über FreeScout, automatische Ticket-Analyse und Antwortvorschläge via n8n + Ollama, Dokumentenmanagement mit Paperless-ng – alles self-hosted, cloudunabhängig.</p>
-          <div class="stack-row">
-            <span class="stack-pill">n8n</span>
-            <span class="stack-pill">Ollama</span>
-            <span class="stack-pill">FreeScout</span>
-            <span class="stack-pill">Paperless-ng</span>
-            <span class="stack-pill">Docker</span>
-          </div>
         </div>
       </div>
 
       <div class="project-card reveal d2">
         <div class="project-card-top">
           <div>
-            <div class="project-title">InnoTrans 2024</div>
-            <div class="project-subtitle">Standmeister · Quiz-Automat · Eisenbahn</div>
+            <div class="project-title">InnoTrans 2024 &amp; 2026</div>
+            <div class="project-subtitle">Standmeister &middot; Touch-Kiosk &middot; Bahnindustrie</div>
           </div>
           <div class="project-icon-wrap" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="12" rx="2"/><path d="M8 20h8M10 16v4M14 16v4"/><circle cx="8.5" cy="10" r="1.5"/><circle cx="15.5" cy="10" r="1.5"/></svg>
           </div>
         </div>
         <div class="project-card-body">
-          <p class="project-desc">Als Standmeister für W&S Technik GmbH auf der weltweit größten Verkehrstechnik-Messe in Berlin. Highlight: ein selbst programmierter interaktiver Quiz-Snack-Automat in JavaScript, der bei Messebesuchern für Begeisterung sorgte.</p>
-          <div class="stack-row">
-            <span class="stack-pill">JavaScript</span>
-            <span class="stack-pill">B2B Messe</span>
-            <span class="stack-pill">Eisenbahnindustrie</span>
+          <p class="project-desc">Standmeister der W&amp;S Technik GmbH auf der weltgr&ouml;&szlig;ten Fachmesse f&uuml;r Verkehrstechnik in Berlin &ndash; 2024 erstmals, 2026 erneut. Als Publikumsmagnet habe ich einen Quiz-Preisautomaten gebaut: ein Touch-Kiosk in TypeScript, den Vite zu rein statischem HTML/CSS/JS b&uuml;ndelt &ndash; ohne Server, Datenbank oder Internetverbindung, weil Messe-WLAN keine Betriebsgrundlage ist. Drei Schwierigkeitsgrade teilen sich eine gemeinsame Quiz-Engine und unterscheiden sich nur in ihren Fragenkatalogen; die Quizlaufzeit liegt in einem eigenen iFrame und kommuniziert per <code>postMessage</code> mit Origin-Pr&uuml;fung gegen die Host-Seite. Die Preisausgabe l&ouml;st fire-and-forget per HTTP-POST die Relais eines Microcontrollers aus &ndash; f&auml;llt der aus, l&auml;uft der Automat unbeirrt weiter. Das Layout skaliert &uuml;ber eine fluide Wurzelschriftgr&ouml;&szlig;e statt fester Pixelwerte und sitzt damit ohne Magic Numbers auf dem 2160&times;3840-Panel im Hochformat.</p>
+          <a class="project-link" href="https://github.com/Moritz-Staat/Snackautomat" target="_blank" rel="noopener noreferrer">
+            Code auf GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card reveal d3">
+        <div class="project-card-top">
+          <div>
+            <div class="project-title">mycycle</div>
+            <div class="project-subtitle">FemTech &middot; DiGA-Konzeption &middot; React/TypeScript</div>
           </div>
+          <div class="project-icon-wrap" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l2.5-6 4 13 2.5-7h6"/></svg>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <p class="project-desc">Konzeption und Prototyp einer Digitalen Gesundheitsanwendung f&uuml;r Zyklusgesundheit nach &sect;33a SGB V &ndash; inklusive Business Model Canvas, Erstattungslogik &uuml;ber den GKV-Leistungskatalog, BfArM-Zulassungspfad und Finanzierungsmodell. Den Pitch-Prototyp habe ich in acht Iterationen implementiert: komponentenbasiertes Design-System in React 18 mit striktem TypeScript, State-Management &uuml;ber Zustand-Stores, Zeitreihenvisualisierung von HRV-, Schlaf- und Basaltemperaturverl&auml;ufen via Recharts, ein nach Severity klassifizierter Insight-Feed &uuml;ber kuratierte Anomalie-Szenarien in synthetischen Kohortendaten, ein Arzt-Export sowie eine rollengetrennte Partner-Ansicht nach Privacy-by-Design mit reduziertem Datenumfang. Vorgestellt haben wir das Ergebnis im Juni 2026 beim <strong>Digital Health on Campus</strong> in Hamburg.</p>
+          <a class="project-link" href="https://mycycle.staatsprojekte.uk/welcome" target="_blank" rel="noopener noreferrer">
+            Prototyp ansehen
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card reveal d4">
+        <div class="project-card-top">
+          <div>
+            <div class="project-title">Lokale LLM-Inferenz</div>
+            <div class="project-subtitle">llama.cpp &middot; CUDA &middot; Inferenz-Benchmarking</div>
+          </div>
+          <div class="project-icon-wrap" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <p class="project-desc">Quantisierte 27B-Dense- und 35B-A3B-MoE-Modelle im Dauerbetrieb auf 16 GB VRAM &ndash; also unterhalb dessen, was jede g&auml;ngige Anleitung voraussetzt. GGUF-Inferenz unter llama.cpp mit CUDA-Backend, schichtweisem CPU-Offload und selektiver Auslagerung der Expertengewichte (<code>--n-cpu-moe</code>), dazu Multi-Token-Prediction als spekulative Dekodierung mit Entwurfstiefe 2: bei 28k Kontext verdoppelt das den Durchsatz, weil bei knappem VRAM die Speicherbandbreite limitiert und nicht die Rechenleistung &ndash; derselbe Hebel bringt auf einer vollst&auml;ndig residenten 24-GB-Karte nur ein Drittel davon. Die Messgrundlage ist ein eigenes Telemetriesystem: 1-Hz-Sampling &uuml;ber NVML, psutil und Windows-Leistungsindikatoren, dazu der Prometheus-Endpunkt des Inferenzservers &ndash; Hardwaretelemetrie und Benchmarkergebnisse landen in einem gemeinsamen SQLite-Schema und werden per Join ausgewertet statt &uuml;ber zwei getrennte Systeme korreliert.</p>
         </div>
       </div>
     </div>
@@ -1635,15 +1652,6 @@
         </div>
         <div class="focus-title">Private KI-Infrastruktur</div>
         <p class="focus-desc">Lokale LLM-Deployments auf Consumer-Hardware: Modelle wie Qwen2.5-32B und Llama 3.x laufen GGUF-quantisiert via Ollama – bei ~50 Tokens/Sek. auf der GPU. Open WebUI als Interface, Paperclip für Agent-Orchestrierung mit MCP (Model Context Protocol), Cloudflare Tunnels für sicheren Fernzugriff. Hybrides Routing: einfache Tasks lokal, komplexe über Claude API – kein Vendor-Lock-in, volle Datenkontrolle, null laufende Modellkosten.</p>
-        <div class="stack-row">
-          <span class="stack-pill">Ollama</span>
-          <span class="stack-pill">Open WebUI</span>
-          <span class="stack-pill">GGUF / Q4_K_M</span>
-          <span class="stack-pill">MCP</span>
-          <span class="stack-pill">Paperclip</span>
-          <span class="stack-pill">Cloudflare</span>
-          <span class="stack-pill">Docker</span>
-        </div>
       </div>
 
       <div class="focus-card reveal d1">
@@ -1652,13 +1660,6 @@
         </div>
         <div class="focus-title">Workflow-Automatisierung</div>
         <p class="focus-desc">n8n-basierte Automatisierungspipelines für Verwaltung, Kommunikation und Datenverarbeitung. Komplexe Abläufe – von der KI-Analyse eingehender E-Mails bis zur automatischen Antwortgenerierung – laufen ohne manuellen Eingriff rund um die Uhr.</p>
-        <div class="stack-row">
-          <span class="stack-pill">n8n</span>
-          <span class="stack-pill">Automatisierung</span>
-          <span class="stack-pill">APIs</span>
-          <span class="stack-pill">Webhooks</span>
-          <span class="stack-pill">SQL</span>
-        </div>
       </div>
 
       <div class="focus-card reveal d2">
@@ -1667,12 +1668,6 @@
         </div>
         <div class="focus-title">PropTech & Immobilien-KI</div>
         <p class="focus-desc">Digitalisierung und KI-Automatisierung von Immobilienverwaltungsprozessen: automatische Kategorisierung von Mieteranfragen, KI-generierte Antwortvorschläge, intelligentes Dokumentenmanagement und strukturierte Datenhaltung für Objekte und Mieter.</p>
-        <div class="stack-row">
-          <span class="stack-pill">FreeScout</span>
-          <span class="stack-pill">Paperless-ng</span>
-          <span class="stack-pill">KI-Analyse</span>
-          <span class="stack-pill">PropTech</span>
-        </div>
       </div>
 
       <div class="focus-card reveal d3">
@@ -1681,12 +1676,6 @@
         </div>
         <div class="focus-title">Gründertum & Product</div>
         <p class="focus-desc">Vom ersten Konzept bis zum EXIST-Förderantrag: mit SparMahl habe ich Produktentwicklung, Nutzerforschung, Analytics und Business Development aus erster Hand erlebt. Startup-Denken bedeutet für mich: schnell testen, datengetrieben entscheiden, konsequent iterieren.</p>
-        <div class="stack-row">
-          <span class="stack-pill">EXIST-Förderung</span>
-          <span class="stack-pill">Product Development</span>
-          <span class="stack-pill">UX Research</span>
-          <span class="stack-pill">Analytics</span>
-        </div>
       </div>
 
     </div>
@@ -1724,7 +1713,7 @@
       </div>
     </div>
     <div id="linkedinError" class="linkedin-error" style="display:none;">
-      Posts konnten nicht geladen werden.
+      Aktuell werden hier keine Posts angezeigt.
       <a href="https://linkedin.com/in/moritz-staat-848192215/" target="_blank" rel="noopener noreferrer">Direkt auf LinkedIn ansehen →</a>
     </div>
   </div>
@@ -1801,6 +1790,19 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </div>
         </a>
+
+        <a href="/Lebenslauf_Moritz_Staat.pdf" download class="c-link" aria-label="Lebenslauf als PDF herunterladen">
+          <div class="c-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6M9 15l3 3 3-3"/></svg>
+          </div>
+          <div class="c-text">
+            <small>Lebenslauf</small>
+            <span>PDF herunterladen</span>
+          </div>
+          <div class="c-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </a>
       </div>
 
     </div>
@@ -1815,8 +1817,8 @@
     <div class="footer-logo">Moritz<span class="dot">.</span>Staat</div>
     <div class="footer-copy">© 2026 Moritz Staat · Dortmund</div>
     <div class="footer-links">
-      <a href="https://www.moritz-staat.de/#impressum" target="_blank" rel="noopener noreferrer">Impressum</a>
-      <a href="https://www.moritz-staat.de/#datenschutz" target="_blank" rel="noopener noreferrer">Datenschutz</a>
+      <a href="/rechtliches.html#impressum">Impressum</a>
+      <a href="/rechtliches.html#datenschutz">Datenschutz</a>
     </div>
   </div>
 </footer>
@@ -1885,8 +1887,14 @@
     const errBox = document.getElementById('linkedinError');
 
     function fmtDate(iso) {
+      if (!iso) return '';
       try {
-        return new Date(iso).toLocaleDateString('de-DE', { day: '2-digit', month: 'short', year: 'numeric' });
+        // "2026-05" = monatsgenau, "2026-05-08" = taggenau
+        const monthOnly = /^\d{4}-\d{2}$/.test(iso);
+        const d = new Date(monthOnly ? iso + '-01' : iso);
+        return d.toLocaleDateString('de-DE', monthOnly
+          ? { month: 'long', year: 'numeric' }
+          : { day: '2-digit', month: 'short', year: 'numeric' });
       } catch { return ''; }
     }
 
@@ -1907,12 +1915,13 @@
           </div>
           <div class="li-title">${escHtml(p.title)}</div>
           <div class="li-text">${escHtml(p.text)}</div>
+          ${p.url ? `
           <a class="li-link" href="${escAttr(p.url)}" target="_blank" rel="noopener noreferrer" aria-label="Post auf LinkedIn lesen">
             Auf LinkedIn lesen
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
               <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
             </svg>
-          </a>
+          </a>` : ''}
         </article>
       `).join('');
       // trigger reveal for dynamically rendered cards
